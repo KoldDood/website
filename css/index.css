@@ -1,0 +1,14 @@
+body {
+    background: radial-gradient(rgb(230, 60, 60), black);
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 800px;
+}

@@ -1,20 +1,43 @@
+@import url(https://drive.google.com/drive/folders/1OmeYX7exSvHodiOUkZC9uozGBFr2XiEc?usp=share_link);
 
+* {
+    font-family: Determination Sans Web;
+}
 
 :root {
-    --blue:black;
-    --gray:red;
-    --background:black;
+    --blue: red;
+    --gray: black;
+
 }
 
 body {
-    background-color: var(--background);
+    background: radial-gradient(rgb(227, 65, 65), black);
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
     margin: 0;
     overflow: hidden;
-    color:crimson;
+    color: white;
+}
+
+.home {
+    left: 97%;
+    top: 5%;
+    text-decoration: none;
+    scale: 2;
+    color: white;
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    text-shadow: 0px 0px 3px black;
+}
+
+.home a {
+    color: white;
+    position: top left;
+    opacity: 1;
+    text-decoration: none;
 }
 
 .container {
@@ -30,57 +53,59 @@ body {
     max-width: 100%;
 }
 
+.progress {
+    height: 4px;
+    width: 0%;
+    position: absolute;
+    background-color: var(--blue);
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    translate: translateY(-50%);
+    transition: width 0.5s ease;
+}
+
 .progress-container::before {
     content: "";
     width: 100%;
     height: 4px;
-    background-color: var(--blue);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: -1;
-    transform: translateY(-50%);
-}
-
-
-.progress {
     background-color: var(--gray);
-    height: 4px;
-    width: 0%;
     position: absolute;
     top: 50%;
     left: 0;
     z-index: -1;
     transform: translateY(-50%);
-    transition: width 0.5s ease;
+    box-shadow: 0px 0px 5px black;
 }
 
 .circle {
-    background-color: var(--blue);
+    background-color: var(--gray);
+    color: #e2e2e2;
     height: 30px;
     width: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid grey;
-    transition: width 0.5s ease;
+    border: 3px solid var(--gray);
+    transition: 0.7s ease;
+    box-shadow: 0px 0px 5px black;
 }
 
-.circle:active {
+.circle.active {
     border-color: var(--blue);
 }
 
 .btn {
-    background-color: var(--blue);
-    color:crimson;
-    padding: 8px 30px;
-    margin: 10px;
+    background-color: gray;
+    color: white;
+    padding: 8px, 30px;
+    margin: 5px;
     font-size: 14px;
-    border: 0;
-    border-radius: 14px;
+    border: 0px;
+    border-radius: 6px;
     cursor: pointer;
-    font-family: inherit;
+    box-shadow: 0px 0px 5px black;
 }
 
 .btn:active {

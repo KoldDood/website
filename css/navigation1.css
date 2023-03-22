@@ -17,7 +17,7 @@ body {
     transition: transform 1s linear;
 }
 
-.container.shownav {
+.container.show-nav {
     transform: rotate(-20deg);
 }
 
@@ -107,7 +107,6 @@ nav ul li {
 nav ul li i {
     font-size: 20px;
     margin-right: 10px;
-    transition: transfom 1s;
 }
 
 nav ul li + li {
