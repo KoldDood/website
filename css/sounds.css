@@ -11,11 +11,9 @@ body {
     height: 100vh;
     overflow: hidden;
     align-items: center;
-    text-shadow: 0px 0px 3px black;
-    box-shadow: 0px 0px 3px black;
 }
 .home {
-    left: 97%;
+    display: flex;
     top: 5%;
     text-decoration: none;
     scale: 2;
@@ -24,7 +22,7 @@ body {
     opacity: 1;
     z-index: 1;
     text-shadow: 0px 0px 3px black;
- }
+}
  .home a {
     color: white;
     position: top left;

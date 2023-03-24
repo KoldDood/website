@@ -22,7 +22,7 @@ body {
 }
 
 .home {
-    left: 97%;
+    display: flex;
     top: 5%;
     text-decoration: none;
     scale: 2;

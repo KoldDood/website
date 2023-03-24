@@ -1,11 +1,22 @@
 body {
-    background: radial-gradient(rgb(230, 60, 60), black);
+    background: linear-gradient(to bottom right, purple, blue);
     display: flex;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     margin: 0;
     overflow: hidden;
+}
+
+.tab {
+    display: flex;
+    top: 5%;
+    left: 5%;
+    text-decoration: none;
+    scale: 1.5;
+    color: white;
+    opacity: 1;
+    z-index: 1;
 }
 
 .container {
